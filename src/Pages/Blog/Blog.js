@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet' ;
 import { useQuery } from '@apollo/client'
 import GETBLOG from '../../graphql/blog';
 const Blog = () => {
-    const [theme , setTheme] = useContext(Theme);
+    const [theme] = useContext(Theme);
     const {loading , error , data} = useQuery(GETBLOG);
     if (loading) return <p style={{
       textAlign : "center" ,

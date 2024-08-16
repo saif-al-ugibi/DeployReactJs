@@ -18,7 +18,7 @@ import ServiceSection from '../../Components/Service/service'
 import { Helmet } from 'react-helmet'
 
 const Home = () => {
-  const [theme , setTheme] = useContext(Theme);
+  const [theme ] = useContext(Theme);
   const {loading , error , data} = useQuery(GETHOME);
   if (loading) return <p style={{
       textAlign : "center" ,

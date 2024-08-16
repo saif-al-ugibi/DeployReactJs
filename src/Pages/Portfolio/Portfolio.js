@@ -6,7 +6,7 @@ import { useQuery } from '@apollo/client'
 import GETPORTFOLIO from '../../graphql/portfolio';
 import { Helmet } from 'react-helmet';
 const Portfolio = () => {
-    const [theme , setTheme] = useContext(Theme);
+    const [theme] = useContext(Theme);
     const {loading , error , data} = useQuery(GETPORTFOLIO);
     if (loading) return <p style={{
       textAlign : "center" ,

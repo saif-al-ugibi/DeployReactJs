@@ -6,7 +6,7 @@ import { useQuery } from '@apollo/client'
 import GETServices from '../../graphql/Service'
 import { Helmet } from 'react-helmet'
 const Services = () => {
-    const [theme , setTheme] = useContext(Theme);
+    const [theme] = useContext(Theme);
     const {loading , error , data} = useQuery(GETServices);
     if (loading) return <p style={{
         textAlign : "center" ,

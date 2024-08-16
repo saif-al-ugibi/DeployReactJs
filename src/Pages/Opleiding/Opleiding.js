@@ -7,7 +7,7 @@ import './Opleiding.css'
 import { useQuery } from '@apollo/client'
 import GETOPLEADING from '../../graphql/opleading'
 const Opleiding = () => {
-    const [theme , setTheme] = useContext(Theme);
+    const [theme ] = useContext(Theme);
     const {loading , error , data} = useQuery(GETOPLEADING);
     if (loading) return <p style={{
       textAlign : "center" ,

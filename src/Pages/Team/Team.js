@@ -7,7 +7,7 @@ import { useQuery } from '@apollo/client';
 import GETTEAM from '../../graphql/team';
 
 const Team = () => {
-    const [theme , setTheme] = useContext(Theme);
+    const [theme ] = useContext(Theme);
     const {loading , error , data} = useQuery(GETTEAM);
     if (loading) return <p style={{
         textAlign : "center" ,

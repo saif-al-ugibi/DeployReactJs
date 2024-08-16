@@ -6,7 +6,7 @@ import "./Error.css"
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 const Error = () => {
-    const [theme , setTheme] = useContext(Theme);
+    const [theme] = useContext(Theme);
     const navigate = useNavigate();
   return (
     <div className='Error'>
