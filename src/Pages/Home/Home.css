@@ -1,0 +1,236 @@
+.Home .content .hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #007bff;
+    color: #fff;
+}
+
+.hero-image-content{
+    flex: 1;
+    padding: 1rem;
+}
+.hero-image .hero-image-content h1{
+    font-size: 26px;
+}
+
+.hero-image .hero-image-content p{
+    font-size: 19px;
+}
+
+.hero-image .hero-image-content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: var(--lightMode);
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hero-image-img img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.section-opleiding , 
+.section-portfolio , 
+.section-blog , 
+.section-services , 
+.section-team{
+    color: rgb(51, 51, 51);
+    background-color:rgb(240, 240, 240) ;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+.section-opleiding .container , 
+.section-portfolio .container , 
+.section-blog .container , 
+.section-services .container , 
+.section-team .container{
+    background-color: rgb(240, 240, 240);
+    height: fit-content;
+    padding-bottom: 5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dark .section-opleiding,
+.dark .section-portfolio , 
+.dark .section-blog , 
+.dark .section-services,
+.dark .section-team , 
+.dark .section-opleiding .container , 
+.dark .section-portfolio .container , 
+.dark .section-blog .container , 
+.dark .section-services .container , 
+.dark .section-team .container{
+    background-color: var(--primaryColor);
+    color: var(--lightMode);
+}
+
+.section-opleiding .container h2 , 
+.section-portfolio .container h2 ,
+.section-blog .container h2 , 
+.section-services .container h2 , 
+.section-team .container h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-opleiding .container p , 
+.section-portfolio .container p , 
+.section-blog .container p , 
+.section-services .container p , 
+.section-team .container p{
+    font-size: 19px;
+    margin: 0 auto;
+}
+
+
+.section-blog .container h3 , 
+.section-services .container h3 {
+    font-size: 24px;
+}
+
+.section-services .container p:not(:first-of-type){
+    margin: 15px auto;
+} 
+.section-blog .container h4{
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.section-portfolio .container p , 
+.section-team .container p{
+    margin-bottom: 2rem;
+}
+.cards-portfolio ,.team-members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.cards-portfolio .card , 
+.team-members .team-member{
+    color: rgb(51, 51, 51);
+    background-color: var(--lightMode);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 48%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.card a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.cards-portfolio .card:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    cursor: pointer;
+}
+
+.team-members .team-member:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.cards-portfolio .card img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.cards-portfolio .card .card-info{
+    padding: 0.5rem;
+}
+
+@media (max-width:991px) {
+    .hero-image-img {
+        display: none;
+    }
+
+    .section-opleiding .container h2 , 
+    .section-portfolio .container h2 , 
+    .section-blog .container h2 , 
+    .section-services .container h2{
+        font-size: 2rem;
+    }
+
+    .section-opleiding .container p , 
+    .section-portfolio .container p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section-blog .container p , 
+    .section-services .container p{
+        font-size: 17px;
+    }
+
+    .cards-portfolio , .team-members{
+        flex-direction: column;
+    }
+    .cards-portfolio .card , .team-members .team-member {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-blog .container h3 , h4 , 
+    .section-services .container h3{
+        font-size: 20px;
+    }
+}
