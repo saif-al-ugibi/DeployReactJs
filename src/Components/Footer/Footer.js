@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import "./Footer.css"
 //import { Theme } from '../../context/themeContext'
 import facebook from "../../assets/socialMedia/facebook.svg"
